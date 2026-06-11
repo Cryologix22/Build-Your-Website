@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="FES Assets/FES.svg">
+            <img src="FES Assets/FES.svg" class="logo">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -16,62 +17,72 @@
             </ul>
         </nav>
         <header>
+            <div class="row">
             <div>
                 <h1>Best place to learn frontend</h1>
-                <p>Go from being an absolute beginner to a pro with a simplified process.</p>
+                <p class="subheader">Go from being an absolute beginner to a pro with a simplified process.</p>
                 <button>Start Now</button>
             </div>
             <figure>
                 <img src="FES Assets/laptop.png" alt"Home Page Image">
             </figure>
+        </div>
         </header>
     </section>
     <main>
         <section id="about">
         <h2>About</h2>
-        <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumsue nisl! Eum aspernatur officia aut volptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam?
+        <div class="row">
+        <div class="section__description">
+            <div class="section__description--wrapper">
+            <p class="section__description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumsue nisl! Eum aspernatur officia aut volptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam?
             </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumsue nisl! Eum aspernatur officia aut volptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam?
+            <p class="section__description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumsue nisl! Eum aspernatur officia aut volptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam?
             </p>
         </div>
-        <figure>
+        <figure class="about__img--wrapper">
             <img src="FES Assets/about.jpg" alt="About Image">
         </figure>
+    </div>
+        </div>
         </section>
 
         <section id="discord">
             <h2>Discord</h2>
-            <figure>
+            <div class="row">
+            <div class="section__description">
+            <figure class="about__img--wrapper">
                 <img src="FES Assets/discord.png" alt="Discord Image">
             </figure>
-            <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumsue nisl! Eum aspernatur officia aut volptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam?
+            <div class="section__description--wrapper">
+            <p class="section__description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumsue nisl! Eum aspernatur officia aut volptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam?
             </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumsue nisl! Eum aspernatur officia aut volptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam?
+            <p class="section__description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus saepe quis adipisci cumsue nisl! Eum aspernatur officia aut volptates ipsum, deserunt debitis numquam iusto accusamus. Incidunt repellat nulla quam numquam?
             </p>
         </div>
+            </div>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <form>
                 <label for="Email">Email:</label>
-                <input type="email" id="Email" name="Email" placeholder="Enter your email">
+                <input type="email" id="Email" name="Email" placeholder="Jane@example.com">
                 <label for="Message">Message:</label>
-                <textarea id="Message" name="Message" placeholder="Enter your message"></textarea>
-                <button type="submit">Submit</button>
+                <textarea type="text" name="Message" placeholder="Cool website, let's get connected!"></textarea>
+                <button type="submit">Contact Us!</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <img src="FES Assets/FES.svg" alt="Footer Logo">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="#courses">Courses</a>
+        <img class="footer__logo" src="FES Assets/FES.svg" alt="Footer Logo">
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="#courses">Courses</a>
         </div>
         <p>&copy; Front End Simplified. All rights reserved.</p>
     </footer>
